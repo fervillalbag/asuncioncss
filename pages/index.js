@@ -16,9 +16,9 @@ export default function Home() {
          <main className="main container">
             <Navbar />
 
-            <div class="main__header">
+            <div className="main__header">
                <h2 className="main__title">Blogs</h2>
-               <aside class="main__actions">
+               <aside className="main__actions">
                   <span className="main__item">
                      <Link href="/">
                         <a className="main__link">Reciente</a>

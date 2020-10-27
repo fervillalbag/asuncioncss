@@ -5,7 +5,24 @@
    display: grid;
    grid-row-gap: 1.7rem;
 
-   &__item {
+   @include responsive(768px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 2rem;
+   }
+
+   @include responsive(992px) {
+      margin-top: 2rem;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 2rem;
+   }
+
+   @include responsive(1600px) {
+      grid-template-columns: repeat(4, 1fr);
+      grid-column-gap: 2rem;
+   }
+
+   &__link {
+      display: block;
       background-color: $darkColor;
       color: white;
       padding: 1.25rem 0.7rem;
@@ -36,5 +53,8 @@
    &__date {
       font-weight: 600;
       font-size: 0.8rem;
+      display: block;
+      text-align: right;
+      margin-top: 1rem;
    }
 }

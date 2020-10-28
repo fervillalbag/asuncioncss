@@ -2,7 +2,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Navbar from '../components/Navbar';
-import Blog from '../components/Blog';
+import CardPost from '../components/CardPost';
 
 export default function Home() {
    return (
@@ -34,15 +34,15 @@ export default function Home() {
             </div>
 
             <section className="blog">
-               <Blog />
-               <Blog />
-               <Blog />
-               <Blog />
-               <Blog />
-               <Blog />
-               <Blog />
-               <Blog />
-               <Blog />
+               <CardPost />
+               <CardPost />
+               <CardPost />
+               <CardPost />
+               <CardPost />
+               <CardPost />
+               <CardPost />
+               <CardPost />
+               <CardPost />
             </section>
 
          </main>

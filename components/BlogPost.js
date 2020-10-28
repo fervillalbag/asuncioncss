@@ -1,11 +1,7 @@
 
-import Navbar from '../components/Navbar';
-
 export default function BlogPost() {
    return (
       <article className="blogpost">
-
-         <Navbar />
 
          <h3 className="blogpost__title">Content Ideas to Elevate Your Creative Thinking</h3>
          <hr />

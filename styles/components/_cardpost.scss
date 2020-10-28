@@ -34,7 +34,7 @@
 
       &:hover {
          @include responsive(992px) {
-            transform: translate(5px, 5px);
+            animation-name: cardPost 300ms ease;
          }
       }
 
@@ -79,8 +79,8 @@
    }
 
    &__profile {
-      width: 3rem;
-      height: 3rem;
+      width: 2.5rem;
+      height: 2.5rem;
       border-radius: 50%;
    }
 
@@ -90,5 +90,15 @@
       font-weight: 600;
       font-size: 0.7rem;
       margin-top: 0.5rem;
+   }
+}
+
+/* Animation's */
+
+@keyframes cardPost {
+   from {
+      transform: translate(5px, 5px);
+   } to {
+      transform: translate(0);
    }
 }
